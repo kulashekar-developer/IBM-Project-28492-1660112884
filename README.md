@@ -19,19 +19,12 @@ This Application has been developed to help the customer in processing their com
 
  ## PROJECT STATUS - PROTOTYPE
 
-## 🧑🏻‍🦰 TEAM MEMBERS
+## 🧑🏻‍TEAM MEMBERS
 - KULASHEKAR
 - SARAN PRASANTH 
 - SURYA KUMAR   
 - BALAJI
 - SIVASAI
-
-## 🔗 LINKS
-- RAJKIRAN S S      [ASSIGNMENT](https://github.com/IBM-EPBL/IBM-Project-1392-1658386621/tree/main/Assignment/Team_Lead) 
-- KAMALESUWARAN D   [ASSIGNMENT](https://github.com/IBM-EPBL/IBM-Project-1392-1658386621/tree/main/Assignment/M1_Lead) 
-- SRIGOVINDH S      [ASSIGNMENT](https://github.com/IBM-EPBL/IBM-Project-1392-1658386621/tree/main/Assignment/M2_Lead)
-- GURURAJAN M       [ASSIGNMENT](https://github.com/IBM-EPBL/IBM-Project-1392-1658386621/tree/main/Assignment/M3_Lead)
-
 
 ## PROJECT DESIGN & PLANNING
 # 🧩 IDEATION PHASE
