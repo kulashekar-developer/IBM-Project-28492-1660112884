@@ -2,10 +2,10 @@
  <img src="CUSTOMER.png" />
 </h1>
 
-# 🛃 CUSTOMER CARE REGISTRY
+# 🛃 SKILL/JOB RECOMMENDER 
 
 - TECHNOLOGY : CLOUD APP DEVELOPMENT
-- TEAM ID    : PNT2022TMID37544
+- TEAM ID    : 
 
 # 📒 PROJECT DESCRIPTION
 
@@ -20,10 +20,11 @@ This Application has been developed to help the customer in processing their com
  ## PROJECT STATUS - PROTOTYPE
 
 ## 🧑🏻‍🦰 TEAM MEMBERS
-- RAJKIRAN S S
-- KAMALESUWARAN D   
-- SRIGOVINDH S
-- GURURAJAN M
+- KULASHEKAR
+- SARAN PRASANTH 
+- SURYA KUMAR   
+- BALAJI
+- SIVASAI
 
 ## 🔗 LINKS
 - RAJKIRAN S S      [ASSIGNMENT](https://github.com/IBM-EPBL/IBM-Project-1392-1658386621/tree/main/Assignment/Team_Lead) 
