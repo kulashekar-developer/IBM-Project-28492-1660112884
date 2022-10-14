@@ -1,5 +1,5 @@
 <h1 align="fill" >
- <img src="CUSTOMER.png" />
+ <img src="logo.png" />
 </h1>
 
 # 🛃 SKILL/JOB RECOMMENDER 
