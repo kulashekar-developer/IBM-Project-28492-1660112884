@@ -5,7 +5,7 @@
 # 🛃 SKILL/JOB RECOMMENDER 
 
 - TECHNOLOGY : CLOUD APP DEVELOPMENT
-- TEAM ID    : 
+- TEAM ID    : PNT2022TMID36082
 
 # 📒 PROJECT DESCRIPTION
 
@@ -41,5 +41,5 @@ This Application has been developed to help the customer in processing their com
       An empathy map is a visual tool used to gain insight into a user's perspective. Using one allows you to tap into a user's mind and gain their unique perspective. Empathy maps are great in all scenarios where you have to consider user feelings.
 
 
-[EMPATHY MAP LINK ](https://github.com/IBM-EPBL/IBM-Project-1392-1658386621/blob/main/Pre-Development/Ideation_Phase/Empathy_Map)
+[EMPATHY MAP LINK ](https://github.com/kulashekar-developer/IBM-Project-28492-1660112884/blob/main/PROJECT%20DESIGN%20%26%20PLANNING%20PHASE/IDEATION%20PHASE/Empathy%20Map.pdf)
 
