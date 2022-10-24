@@ -1,45 +1,28 @@
-<h1 align="fill" >
- <img src="logo.png" />
-</h1>
+<img align="right" alt="Coding" width="400" src="https://raw.githubusercontent.com/kulashekar-developer/IBM-Project-28492-1660112884/main/banner%20img.png">
 
-# 🛃 SKILL/JOB RECOMMENDER 
+# IBM-Project-28492-1660112884
 
-- TECHNOLOGY : CLOUD APP DEVELOPMENT
-- TEAM ID    : PNT2022TMID36082
+|      **Project Name**     | Skill And Job Recommender |
+|:---------------------:|:------------------------------:|
+|         **Domain**        |  Cloud Application Development |
+|        **Team ID**        |  PNT2022TMIC36082 |
 
-# 📒 PROJECT DESCRIPTION
+# Team Members :
+|   **Title**   |      **Name**     |
+|:-----------:|:-----------------:|
+| Team Leader   | **Kulashekar S**     |
+| Team Member 1 | **Surya Kumar **   |
+| Team Member 2 | **Saran Prasanth **|
+| Team Member 3 | **Balaji M**       |
+| Team Member 4 | **Siva Sai**     |
 
-This Application has been developed to help the customer in processing their complaints.  The customers can raise the ticket with a detailed description of the issue.  An Agent will be assigned to the Customer to solve the problem.  Whenever the agent is assigned to a customer they will be notified with an email alert.  Customers can view the status of the ticket till the service is provided.
+## Required Skills :
+ ![Tux, the Linux mascot](https://img.icons8.com/color/48/40C057/html-5--v1.png)   ![Tux, the Linux mascot](https://img.icons8.com/fluency/48/000000/css3.png) ![Tux, the Linux mascot](https://img.icons8.com/fluency/48/000000/javascript.png) ![Tux, the Linux mascot]( https://img.icons8.com/color/48/000000/kubernetes.png) ![Tux, the Linux mascot](https://img.icons8.com/color/48/000000/docker.png)  ![Tux, the Linux mascot](https://img.icons8.com/fluency/48/000000/python.png)  ![Tux, the Linux mascot]( https://img.icons8.com/ios-filled/50/000000/flask.png) ![Tux, the Linux mascot](https://img.icons8.com/nolan/64/ibm.png)
 
- ADMIN :
- The main role and responsibility of the admin are to take care of the whole process.  Starting from Admin login followed by the agent creation and assigning the customer's complaints.  Finally, He will be able to track the work assigned to the agent and a notification will be sent to the customer.
+    HTML, CSS, Java Script, IBM Cloud Object Storage, Python-Flask, Kubernetes, Docker, IBM DB2, IBM Container Registry
 
- USER :
- They can register for an account.  After the login, they can create the complaint with a description of the problem they are facing.  Each user will be assigned with an agent.  They can view the status of their complaint.
+## Project Idea :
+To develop an end-to-end web application capable of displaying the current job openings based on the user skillset.  The user and their information are stored in the Database.  An alert is sent when there is an opening based on the user skillset. Users will interact with the chatbot and can get the recommendations based on their skills. We can use a job search API to get the current job openings in the market which will fetch the data directly from the webpage.
 
- ## PROJECT STATUS - PROTOTYPE
-
-## 🧑🏻‍TEAM MEMBERS
-- KULASHEKAR
-- SARAN PRASANTH 
-- SURYA KUMAR   
-- BALAJI
-- SIVASAI
-
-## PROJECT DESIGN & PLANNING
-# 🧩 IDEATION PHASE
-
-      Ideation is the process where you generate ideas and solutions through sessions such as Sketching, Prototyping, Brainstorming, Brainwriting, Worst Possible Idea, and a wealth of other ideation techniques.
-- [x] Literature Survey
-- [x] Problem Statement
-- [x] Empathy Map
-- [x] Brainstorm
-- [x] Top 3 Ideas
-
-
-# EMPATHY MAP CANVAS :
-      An empathy map is a visual tool used to gain insight into a user's perspective. Using one allows you to tap into a user's mind and gain their unique perspective. Empathy maps are great in all scenarios where you have to consider user feelings.
-
-
-[EMPATHY MAP LINK ](https://github.com/kulashekar-developer/IBM-Project-28492-1660112884/blob/main/PROJECT%20DESIGN%20%26%20PLANNING%20PHASE/IDEATION%20PHASE/Empathy%20Map.pdf)
-
+## Technical Architecture :
+![Technical architecture diagram](https://lh3.googleusercontent.com/1OWTBsvpOXh0YVOalvRAGG8uDOBJea7NpyXg5hSSHb61IRRFHTY8txceIQfcIsc9b9coajOEraPoPIAVr5SOr0WFF0iQKVHnHOXk-wAn6XwNjuZFSsdGwreGV7Y10Q)
