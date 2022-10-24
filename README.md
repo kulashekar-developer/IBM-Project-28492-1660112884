@@ -11,8 +11,8 @@
 |   **Title**   |      **Name**     |
 |:-----------:|:-----------------:|
 | Team Leader   | **Kulashekar S**     |
-| Team Member 1 | **Surya Kumar **   |
-| Team Member 2 | **Saran Prasanth **|
+| Team Member 1 | **Surya Kumar**   |
+| Team Member 2 | **Saran Prasanth**|
 | Team Member 3 | **Balaji M**       |
 | Team Member 4 | **Siva Sai**     |
 
