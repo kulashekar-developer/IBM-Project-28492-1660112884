@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StuDiN | Skill & Job Recommender</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "3475c4de-7138-49b8-ac84-abcb2a7e78fa", // The ID of this integration.
+        region: "au-syd", // The region your integration is hosted in.
+        serviceInstanceID: "f8c59cd7-eabe-45a2-9d2d-63edb724890e", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+    </script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+nav{
+  position: fixed;
+  background: #000000;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 12;
+}
+nav .menu{
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.menu ul{
+  display: inline-flex;
+}
+.menu ul li{
+  list-style: none;
+  margin-left: 7px;
+}
+.menu ul li:first-child{
+  margin-left: 0px;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+}
+.menu ul li a:hover{
+  background: #FDBE33;
+  color: black;
+  border-radius: 5px;
+}
+.center{
+  position: absolute;
+  top: 85%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+.center .title{
+  color: rgb(0, 0, 0);
+  font-size: 55px;
+  font-weight: 600;
+}
+.center .sub_title{
+  color: rgb(5, 5, 5);
+  font-size: 52px;
+  font-weight: 600;
+}
+.center .btns{
+  margin-top: 50px;
+  padding-right: 50px;
+}
+.center .btns button{
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 10px;
+  border: 2px solid rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+}
+.center .btns button:first-child{
+  color: rgb(0, 0, 0);
+  background: none;
+}
+.center .btns button:last-child{
+  background: white;
+  color: rgb(10, 10, 10);
+}
+.logo{
+  padding-top: 15px;
+}
+.bgimg{
+  padding-top: 100px;
+}
+.regimg{
+	padding-top: 180px;
+	padding-right: 180px;
+	padding-left: 180px;
+}
+.signinlayout{
+  position: absolute;
+  top: 82%;
+  right: 25%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.about{
+  padding-top: 40%;
+	width: 100%;
+	padding: 100px 0px;
+	background-color: #191919;
+}
+.about img{
+	height: auto;
+	width: 430px;
+	padding-right: 50px;
+}
+.about-text{
+	width: 750px;
+	height: 400px;
+}
+.main{
+  margin-top: 100px;
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.about-text h2{
+	color: white;
+	font-size: 75px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.about-text h5{
+	color: white;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
+}
+.about-text p{
+	color: #fcfc;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+}
+.button{
+	background-color:#ffd000;
+	text-align: center;
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+.service{
+	background: #FDBE33;
+	width: 100%;
+	padding: 100px 0px;
+	background-image: url(../img/bottom.jpg);
+
+}
+.title h2{
+	color: white;
+	font-size: 75px;
+	width: 1130px;
+	margin: 30px auto;
+	text-align: center;
+}
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+}
+.card{
+	height: 365px;
+	width: 335px;
+	padding: 20px 35px;
+	background: #191919;
+	border-radius: 20px;
+	margin: 15px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+.card i{
+	font-size: 50px;
+	display: block;
+	text-align: center;
+	margin: 25px 0px;
+	color: #FDBE33;
+
+}
+h5{
+	color: white;
+	font-size: 23px;
+	margin-bottom: 15px;
+}
+.pra p{
+	color: #fcfc;
+	font-size: 16px;
+	line-height: 27px;
+	margin-bottom: 25px;
+}
+.card .button{
+	background-color:#FDBE33;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 9px 22px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+.card .button:hover{
+	background-color: transparent;
+	border: 2px solid #FDBE33;
+	cursor: pointer;
+}
+footer{
+	position: relative;
+	width: 100%;
+	height: 250px;
+	background: #101010;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-image: url(../img/contact.jpg);
+}
+footer p:nth-child(1){
+	font-size: 30px;
+	color: white;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+footer p:nth-child(2){
+	color: white;
+	font-size: 17px;
+	width: 500px;
+	text-align: center;
+	line-height: 26px;
+}
+.social{
+	display: flex;
+}
+.social a{
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:  #FDBE33;
+	border-radius: 50%;
+	margin: 22px 10px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+.social a:hover{
+	transform: scale(1.3);
+	transition: .3s;
+}
+.end{
+	position: absolute;
+	color:#FDBE33;
+	bottom: 35px;
+	font-size: 14px; 
+}
+.bottom{
+  padding-top: 280px;
+}
+.sub-footer p {
+	text-align: center;
+	display: inline-block;
+	background-color: #000000;
+	width: 100%;
+	margin-bottom: 0px;
+	padding: 30px 0px;
+	font-size: 15px;
+	color: #aaaaaa;
+  }
+  
+  .sub-footer a {
+	text-decoration: none;
+	color: #4883ff;
+  }
+
+</style>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	width: 380px;
+	height: 540px;
+	background: #fff;
+	box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);
+	position: absolute;
+	top: 50%;
+	left: 80%;
+	transform: translate(-50%, -50%);
+	border-radius: 7px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 1rem;
+}
+
+.container h2{
+	color: #010101;
+	font-size: 1.6rem;
+}
+
+.container h2 i{
+	font-size: 1.8rem;
+	padding-left: .1rem;
+}
+
+.text p{
+	font-size: .8rem;
+	padding-top: 0.3rem;
+}
+
+.input {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	margin-bottom: 0.7em;
+}
+
+.your-input input{
+	width: 100%;
+	height: 50px;
+	padding-top: 1.1rem;
+	padding-left: 9px;
+	outline: none;
+	border: 1px solid #8c8c8c;
+	border-radius: 3px;
+	transition: .2s;
+}
+
+.your-input label {
+	position: absolute;
+	top: 30%;
+	left: 10px;
+	font-size: 1.1rem;
+	color: #8c8c8c;
+	transition: .2s;
+}
+
+.input input:focus ~ label,
+.input input:valid ~ label{
+	top: 10%;
+	font-size: .8rem;
+	color: #000;
+}
+
+.input input:focus {
+	border-width: 2px;
+	border-color: #040404;
+}
+
+.forgot-password-link {
+	width: 140px;
+	padding: .2rem;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bolder;
+	color: #040404;
+	transition: .3s;
+	border-radius: 12px;
+}
+
+.forgot-password-link:hover{
+	background: rgba(10, 102, 195, 0.3);
+}
+
+button {
+	height: 50px;
+	background: #FFC700;
+	outline: none;
+	border: none;
+	border-radius: 30px;
+	color: rgb(8, 8, 8);
+	font-size: 1rem;
+	font-weight: bolder;
+}
+
+.join-link {
+text-decoration: none;
+font-weight: bolder;
+color: #000000;
+}
+
+.join-now{
+	text-decoration: none;
+	font-weight: bolder;
+	color: #000000;
+	border-radius: 12px;
+	transition: .3s;
+	font-weight: bolder;
+	padding: .2rem;
+}
+
+.join-now:hover{
+	background: rgba(10, 102, 195, 0.3);
+}
+
+</style>
+  </head>
+<body>
+  <nav>
+    <div class="menu">
+      <div class="logo">
+        <img src="https://studin.s3.jp-tok.cloud-object-storage.appdomain.cloud/img/studinlogo.png" alt="logo"
+        width="180px"; height="55px">
+
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">SignIn</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="bgimg">
+  <img src="https://studin.s3.jp-tok.cloud-object-storage.appdomain.cloud/img/bg1.png">
+</div>
+  <div class="center">
+    <div class="title">Join the biggest Studin.</div>
+    <div class="sub_title">Professional community.!</div>
+    <div class="btns">
+      <button>Join Now</button>
+      <button>About</button>
+    </div>
+  </div>
+  <div class="container">
+    <h2>Student<span>
+        <i class="fab fa-linkedin"></i>
+    </span></h2>
+    <div class="text">
+        <h1>Sign in</h1>
+        <p>Stay updated on your professional world</p>
+    </div>
+    <div class="your-input">
+        <div class="input">
+            <input type="text" name="email" 
+                id="email" required />
+            <label for="email">Email</label>
+        </div>
+        <div class="input">
+            <input type="password" name="password" 
+                id="password" required />
+            <label for="password">
+                Password
+            </label>
+        </div>
+    </div>
+    <a href="#" class="forgot-password-link">
+        Forgot Password?
+    </a>
+    <button onclick="validate()">Sign in</button>
+    <p class="join-link">
+        New to Studentin?
+        <a href="register.html" class="join-now">
+            Join now
+        </a>
+    </p>
+</div>
+<div class="bottom">
+<!----About section start---->
+<section class="about">
+  <div class="main">
+    <img src="https://assignment-3images.s3.jp-tok.cloud-object-storage.appdomain.cloud/man1.jpg" height="20%" width="25%">
+    <div class="about-text">
+      <h2>Let the right people know <span>
+        you’re open to work
+      </span> </h2>
+      <a class="button" href="#">Read More</a>
+    </div>
+  </div>
+</section>
+
+<!-----service section start----------->
+<div class="service">
+  <div class="title">
+    <h2>Our Services</h2>
+  </div>
+
+  <div class="box">
+    <div class="card">
+      <i class="fas fa-bars"></i>
+      <h5>Mobile App Development</h5>
+      <div class="pra">
+        <p>Android software development is the process by which applications are created for devices running the Android operating system. Google states that "Android apps can be written using Kotlin, Java  languages.</p>
+
+        <p style="text-align: center;">
+          <a class="button" href="#">Read More</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <i class="far fa-user"></i>
+      <h5>Web Development</h5>
+      <div class="pra">
+        <p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+
+        <p style="text-align: center;">
+          <a class="button" href="#">Read More</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <i class="far fa-bell"></i>
+      <h5>Infrastructure Engineers</h5>
+      <div class="pra">
+        <p>Infrastructure Engineers are responsible for designing, building, deploying, evaluating, and maintaining IT infrastructure using the latest technology and ensuring all IT systems that support businesses.</p>
+
+        <p style="text-align: center;">
+          <a class="button" href="#">Read More</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------footer start--------->
+<footer>
+  <p>Studin Cloud based Webapplication.</p>
+  <p>For more HTML, CSS, and coding tutorial - please click on the link below to subscribe to my channel </p>
+  <p class="end"></p>
+</footer>
+<div class="sub-footer">
+  <p>Copyright &copy; 2022- Studin Skill & Job Recommender 
+
+- Design  <a rel="nofollow" href="http://www.google.com">Google</a></p>
+</div>
+
+</div>
+</body>
+<script>
+  var attempt = 3;
+  function validate(){
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    if(email =="" && password ==""){
+      alert("Email id and password cannot be Empty!!!");
+      return false;
+    }
+    if(email == "stud@gmail.com" && password == "stud@2022"){
+      window.location = "dashboard.html";
+      return false;
+    }
+    else{
+      attempt --;
+      alert("given email id and Password does not match,Please check Again!! "+attempt+" attempt more to login");
+      if(attempt==  0){
+        document.getElementById("email").disabled = true;
+        document.getElementById("password").disabled = true;
+        document.getElementById("Signin").disabled = true;
+        return false;
+      }
+    }
+  }
+
+</script>
+
+</html>
