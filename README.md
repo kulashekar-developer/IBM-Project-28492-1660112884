@@ -1,4 +1,4 @@
-<img align="right" alt="Coding" width="400" src="https://raw.githubusercontent.com/kulashekar-developer/IBM-Project-28492-1660112884/main/banner%20img.png">
+<img align="right" alt="Coding" width="400" src="https://raw.githubusercontent.com/kulashekar-developer/IBM-Project-28492-1660112884/main/bg1.png">
 
 # IBM-Project-28492-1660112884
 
