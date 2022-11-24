@@ -25,6 +25,5 @@ To develop an end-to-end web application capable of displaying the current job o
 ## Project Idea :
 To develop an end-to-end web application capable of displaying the current job openings based on the user skillset.  The user and their information are stored in the Database.  An alert is sent when there is an opening based on the user skillset. Users will interact with the chatbot and can get the recommendations based on their skills. We can use a job search API to get the current job openings in the market which will fetch the data directly from the webpage.
 
-## Technical Architecture :
-![Technical architecture diagram]
-(https://raw.githubusercontent.com/kulashekar-developer/IBM-Project-28492-1660112884/main/Assignments/Technical%20Arch.png)
+## Thank You :
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg"  align="center" alt="drawing" width="200" />
