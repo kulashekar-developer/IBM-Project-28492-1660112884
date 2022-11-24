@@ -27,4 +27,4 @@ To develop an end-to-end web application capable of displaying the current job o
 
 ## Technical Architecture :
 ![Technical architecture diagram]
-(https://lh3.googleusercontent.com/1OWTBsvpOXh0YVOalvRAGG8uDOBJea7NpyXg5hSSHb61IRRFHTY8txceIQfcIsc9b9coajOEraPoPIAVr5SOr0WFF0iQKVHnHOXk-wAn6XwNjuZFSsdGwreGV7Y10Q)
+(https://raw.githubusercontent.com/kulashekar-developer/IBM-Project-28492-1660112884/main/Assignments/Technical%20Arch.png)
